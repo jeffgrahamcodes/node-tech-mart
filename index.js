@@ -1,26 +1,9 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
+const replaceTemplate = require('./modules/replaceTemplate');
 
 // Server
-const replaceTemplate = (template, product) => {
-  let output = template.replace(
-    /{%PRODUCTNAME%}/g,
-    product.productName
-  );
-  output = output.replace(/{%IMAGE%}/g, product.image);
-  output = output.replace(/{%PRICE%}/g, product.price);
-  output = output.replace(/{%BRAND%}/g, product.brand);
-  output = output.replace(/{%SPECS%}/g, product.specs);
-  output = output.replace(/{%QUANTITY%}/g, product.quantity);
-  output = output.replace(/{%DESCRIPTION%}/g, product.description);
-  output = output.replace(/{%ID%}/g, product.id);
-
-  if (!product.new) {
-    output = output.replace(/{%NOT_NEW%}/g, 'not-new');
-  }
-  return output;
-};
 const data = fs.readFileSync(`${__dirname}/data/data.json`, 'utf-8');
 const overviewTemplate = fs.readFileSync(
   `${__dirname}/templates/template-overview.html`,
