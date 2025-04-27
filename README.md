@@ -46,7 +46,7 @@ It features a clean, modern design with a focus on real-world web development sk
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone this repository:**
 
@@ -72,7 +72,7 @@ It features a clean, modern design with a focus on real-world web development sk
 
 ---
 
-## 📦 Future Improvements
+## Future Improvements
 
 - Add real product images instead of emojis
 - Implement a real database (e.g., MongoDB or PostgreSQL)
@@ -82,14 +82,14 @@ It features a clean, modern design with a focus on real-world web development sk
 
 ---
 
-## 🎯 Why This Project?
+## Why This Project?
 
 Node Tech Mart was built to showcase practical web development skills including server-side rendering, dynamic routing, and clean frontend presentation.
 It is portfolio-ready for showcasing proficiency in backend and frontend integration.
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Jeff Graham**
 Web Developer | Cloud Consultant
