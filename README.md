@@ -1,6 +1,6 @@
 # 🚀 Node Tech Mart 💻
 
-Node Tech Mart is a tech products catalog built with Node.js, Express.js, and EJS templating.
+Node Tech Mart is a tech products catalog built with Node.js, and EJS templating.
 It features a clean, modern design with a focus on real-world web development skills like routing, templating, and dynamic data rendering.
 
 ## Demo Preview
@@ -12,7 +12,6 @@ It features a clean, modern design with a focus on real-world web development sk
 ## Tech Stack
 
 - Node.js
-- Express.js (built-in HTTP module used)
 - EJS (HTML templating)
 - HTML5, CSS3 (with a modern glassmorphism design)
 - JSON (dynamic data source)
