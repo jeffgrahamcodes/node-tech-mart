@@ -5,7 +5,7 @@ It features a clean, modern design with a focus on real-world web development sk
 
 ## Demo Preview
 
-![Node Tech Mart Screenshot](your-screenshot-link-here)
+![Node Tech Mart Screenshot](node-tech-mart.png)
 
 ---
 
