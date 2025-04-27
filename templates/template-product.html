@@ -33,36 +33,37 @@
       }
 
       body {
-        padding: 5rem 5rem 10rem;
-        line-height: 1.7;
+        padding: 5rem 3rem 10rem;
         font-family: 'Nunito Sans', sans-serif;
-        color: #ddd;
-        min-height: 100vh;
+        color: #eee;
         background: linear-gradient(
           to bottom right,
           #0f2027,
           #203a43,
           #2c5364
         );
+        min-height: 100vh;
+        line-height: 1.6;
       }
 
       h1 {
         font-family: 'Megrim', sans-serif;
         font-size: 6rem;
         color: white;
-        transform: skewY(-5deg);
         text-align: center;
+        margin-bottom: 5rem;
+        word-spacing: 5px;
+        transform: skewY(-3deg);
         position: relative;
-        word-spacing: 3px;
       }
 
       h1::before {
         content: '';
         display: block;
-        height: 65%;
-        width: 49%;
+        height: 60%;
+        width: 50%;
         position: absolute;
-        top: 105%;
+        top: 100%;
         left: 50%;
         background: linear-gradient(
           to bottom,
@@ -70,218 +71,137 @@
           #203a43,
           #2c5364
         );
-        opacity: 0.8;
+        opacity: 0.7;
         z-index: -1;
         transform: skewY(370deg) translate(-50%, -50%);
       }
 
       .container {
-        width: 95rem;
+        max-width: 80rem;
         margin: 0 auto;
       }
 
       .product {
-        width: 60rem;
-        margin: 0 auto;
-        margin-top: 9rem;
+        margin-top: 8rem;
         background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 1rem;
-        box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(10px);
-        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 2rem;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
         overflow: visible;
+        padding: 4rem;
       }
 
       .product__hero {
         position: relative;
-        height: 22rem;
+        height: 25rem;
+        margin-bottom: 4rem;
         overflow: hidden;
-      }
-
-      .product__hero::before {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: linear-gradient(
-          to left bottom,
-          #4e54c8,
-          #8f94fb
-        );
-        opacity: 0.5;
-        z-index: 100;
+        border-radius: 2rem;
+        background: linear-gradient(to left bottom, #4e54c8, #8f94fb);
+        opacity: 0.85;
+        z-index: 0;
       }
 
       .product__emoji {
-        font-size: 15rem;
-        position: absolute;
+        font-size: 12rem;
         color: white;
-        opacity: 0.7;
-      }
-
-      .product__emoji--1 {
-        top: -4rem;
-        left: -2rem;
-        z-index: 10;
-      }
-      .product__emoji--2 {
-        top: -6rem;
-        left: 9rem;
-      }
-      .product__emoji--3 {
-        top: -4rem;
-        right: 15rem;
-      }
-      .product__emoji--4 {
-        top: -5rem;
-        right: 2rem;
-        z-index: 10;
-      }
-      .product__emoji--5 {
-        bottom: -9rem;
-        left: 18rem;
-      }
-      .product__emoji--6 {
-        bottom: -8rem;
-        left: 5rem;
-      }
-      .product__emoji--7 {
-        bottom: -12rem;
-        right: 14rem;
-      }
-      .product__emoji--8 {
-        bottom: -8rem;
-        right: -2rem;
-      }
-      .product__emoji--9 {
-        top: -7rem;
-        left: 19rem;
+        opacity: 0.8;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
       }
 
       .product__new {
         position: absolute;
-        top: -4rem;
-        right: -4rem;
-        z-index: 1000;
-        height: 11rem;
-        width: 11rem;
-        background-image: linear-gradient(
-          to bottom,
-          #43cea2,
-          #185a9d
-        );
-        border-radius: 50%;
-        transform: rotate(15deg);
-        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+        top: 2rem;
+        right: 2rem;
+        height: 7rem;
+        width: 7rem;
+        background: linear-gradient(to bottom, #43cea2, #185a9d);
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid rgba(255, 255, 255, 0.4);
-      }
-
-      .product__new h5 {
         font-weight: 900;
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        color: white;
-      }
-
-      .product__back:link,
-      .product__back:visited {
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
         font-size: 1.5rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-decoration: none;
-        z-index: 1000;
-        color: #ddd;
-        background-color: rgba(255, 255, 255, 0.08);
-        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
-        border-radius: 100rem;
-        padding: 0 2rem;
-        transition: all 0.3s;
-        display: flex;
-        align-items: center;
-        backdrop-filter: blur(5px);
-      }
-
-      .product__back:hover,
-      .product__back:active {
-        background-color: #4facfe;
-        color: white;
+        border-radius: 50%;
+        transform: rotate(15deg);
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+        z-index: 10;
       }
 
       .product__name {
-        background: linear-gradient(to bottom, #4e54c8, #8f94fb);
-        padding: 1rem;
         font-family: 'Megrim', sans-serif;
         font-size: 4rem;
-        color: white;
         text-align: center;
-        word-spacing: 2px;
+        margin-bottom: 2rem;
+        color: white;
+        background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
       }
 
       .product__details {
-        background-color: rgba(255, 255, 255, 0.05);
-        padding: 4rem 6rem;
-        font-size: 1.9rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1.5rem;
-        color: #ddd;
+        padding: 3rem;
+        gap: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 1rem;
       }
 
       .product__description {
-        padding: 5rem 6rem;
-        font-size: 1.6rem;
-        line-height: 1.8;
+        padding: 3rem;
+        font-size: 1.7rem;
         color: #ccc;
+        line-height: 1.8;
       }
 
-      .product__link:link,
-      .product__link:visited {
-        display: block;
-        background-color: #4facfe;
+      .product__link {
+        background: #4facfe;
         color: white;
-        font-size: 1.6rem;
-        font-weight: 700;
-        text-transform: uppercase;
         text-decoration: none;
+        font-weight: 700;
+        font-size: 1.7rem;
         padding: 1.5rem;
+        border-radius: 1rem;
+        display: block;
         text-align: center;
-        transform: scale(1.07) skewX(-20deg);
-        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s;
-        border-radius: 0.5rem;
+        margin: 3rem auto 2rem auto;
+        width: 50%;
+        transition: background 0.3s ease;
       }
 
-      .product__link:hover,
-      .product__link:active {
-        background-color: #00c6ff;
-        transform: scale(1.1) skewX(-20deg);
+      .product__link:hover {
+        background: #00c6ff;
       }
 
-      .product__link span {
-        transform: skewX(20deg);
+      .product__back {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background: #4facfe; /* Nice solid tech blue */
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        transition: background 0.3s;
+        z-index: 10;
       }
 
-      .emoji-left {
-        font-size: 2rem;
-        margin-right: 1rem;
+      .product__back:hover {
+        background: #00c6ff; /* Lighter blue on hover */
       }
 
+      .emoji-left,
       .emoji-right {
         font-size: 2rem;
-        margin-left: 1rem;
+        margin: 0 1rem;
       }
 
       .not-new {
@@ -300,40 +220,14 @@
           <span class="emoji-left">👈</span>Back
         </a>
         <div class="product__hero">
-          <span class="product__emoji product__emoji--1"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--2"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--3"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--4"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--5"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--6"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--7"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--8"
-            >{%IMAGE%}</span
-          >
-          <span class="product__emoji product__emoji--9"
-            >{%IMAGE%}</span
-          >
+          <span class="product__emoji">{%IMAGE%}</span>
         </div>
         <h2 class="product__name">{%PRODUCTNAME%}</h2>
         <div class="product__details">
           <p><span class="emoji-left">🌍</span> {%BRAND%}</p>
           <p><span class="emoji-left">❤️</span> {%SPECS%}</p>
           <p><span class="emoji-left">📦</span> {%QUANTITY%}</p>
-          <p><span class="emoji-left">🏷</span> ${%PRICE%}/p></p>
+          <p><span class="emoji-left">🏷</span> ${%PRICE%}</p>
         </div>
 
         <a href="#" class="product__link">
