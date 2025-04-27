@@ -35,14 +35,14 @@ It features a clean, modern design with a focus on real-world web development sk
 
 ```
 /data
-  └── data.json        # Products data
+  └── data.json               # Products data
 /modules
-  └── replaceTemplate.js   # Helper function to inject dynamic data
+  └── replaceTemplate.js      # Helper function to inject dynamic data
 /templates
   ├── template-overview.html  # Overview page layout
   ├── template-card.html      # Individual product cards
   └── template-product.html   # Product detail page
-/index.js             # Server setup and routing
+/index.js                     # Server setup and routing
 ```
 
 ---
